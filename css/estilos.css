@@ -1,0 +1,233 @@
+/* Reset */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
+.contenedor {
+    max-width: 1200px;
+    width: 90%;
+    margin: auto;
+    overflow: hidden;
+}
+
+/* Header */
+
+nav{
+    width: 100%;
+    height: 50px;
+    position: fixed;
+    top: 0;
+    z-index: 100;
+    background-color: #EF3829;
+}
+
+.logo{
+    width: 30px;
+    display: flex;
+    height: 50px;
+    align-items: center;
+}
+
+.claro img{
+    width: 80px;
+}
+
+.fondo{
+    height: 600px;
+    background-image: url("../img/mobile-phone-998871_1920b.jpg");
+    background-size:auto;
+    background-position: center;
+}
+
+.fondo .contenedor{
+    height: 100%;
+}
+
+.header_textos{
+    height: 100%;
+    max-width: 550px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+.header_textos img{
+    width: 164px;
+    height: 40px;
+}
+
+.titulo{
+    color: #ffffff;
+    padding: 40px 0 20px 0;
+    font-size: 40px;
+    font-weight: 500;
+}
+
+.subtitulo{
+    color: white;
+    font-weight: 500;
+    font-size: 22px;
+}
+
+
+.centrar{
+    width: 300px;    
+}
+
+.button{
+    width: 100%;
+    margin: 50px 0 20px 0;
+    padding: 10px;
+    background-color: #EF3829;
+    border-color: #EF3829;
+    cursor: pointer;
+    font-size: 16px;
+    color: white;
+    border-radius: 5px;
+}
+
+
+.cta2{
+    color: white;
+    font-size: 14px;
+    text-align: center;
+}
+
+.cta2 a{
+    text-decoration: none;
+    color: #1F97AE;
+}
+
+/* Que hay en Mi Claro */
+
+.features{
+    margin: 30px 0;
+    font-weight: 500;
+}
+
+.cajas{
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 40px;
+    flex-wrap: wrap;
+}
+
+.caja{
+    width: 23%;
+    min-width: 260px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.caja h3{
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.caja p{
+    margin-top: 10px;
+    font-size: 16px;
+}
+
+/* Footer */
+
+footer{
+    background-color: black;
+    height: 76px;
+}
+
+.contenedor2{
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.derechos{
+    color: white;
+    justify-items: center;
+}
+
+.derechos img{
+    width: 58px;
+}
+
+.derechos p{
+    font-size: 14px;
+    font-weight: 300;
+    padding-left: 5px;
+    display: inline;
+}
+
+.legalyreg a{
+    font-size: 14px;
+    font-weight: 300;
+    text-decoration: none;
+    color: #1F97AE;
+}
+
+@media screen and (max-width: 1200px){
+    .caja{
+        width: 45%;
+    }
+}
+
+@media screen and (max-width: 600px){
+    .header_textos img{
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    .titulo, .subtitulo{
+        text-align: center;
+    }
+
+    .centrar{
+        width: 100%;
+    }
+    
+    .caja{
+        width: 95%;
+    }
+
+    .features{
+        text-align: center;
+    }
+
+    footer{
+        height: auto;
+    }
+
+    .contenedor2{
+        flex-direction: column;
+        justify-content: start;
+    }
+
+    .derechos{
+        padding: 7px 0 0 0;
+        text-align: center;
+    }
+
+    .derechos img{
+        padding: 3px;
+        align-items: center;
+    }
+
+    .derechos p{
+        display: block;
+        padding: 3px;
+    }
+
+    .legalyreg{
+        padding: 3px 0 10px 0;
+    }
+
+}
