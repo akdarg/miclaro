@@ -1,5 +1,3 @@
-/* Reset */
-
 *{
     margin: 0;
     padding: 0;
@@ -88,12 +86,21 @@ nav{
     padding: 10px;
     background-color: #EF3829;
     border-color: #EF3829;
+    border: none;
     cursor: pointer;
     font-size: 16px;
     color: white;
     border-radius: 5px;
 }
 
+.button:focus, .button:active, button:hover{
+    background-color: #B7202E;
+    border-color: #B7202E;
+}
+
+.button:focus{
+    outline: none;
+}
 
 .cta2{
     color: white;
